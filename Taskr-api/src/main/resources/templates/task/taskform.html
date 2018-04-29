@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Task Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+    <link href="../../static/css/spring-core.css"
+          th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="container">
+
+    <h2>Task Details</h2>
+    <div>
+        <form class="form-horizontal" th:object="${taskForm}" th:action="@{/task}" method="post">
+
+            <div th:if="${#fields.hasErrors('*')}" class="alert alert-danger">
+                <p th:text="#{form.hasErrors}">Error Message</p>
+            </div>
+
+            <input type="hidden" th:field="*{taskId}"/>
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskName')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" th:field="*{taskName}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskName')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskDescription')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Description:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskDescription}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskDescription')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskNotes')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Notes:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskNotes}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskNotes')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskPriority')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Priority:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskPriority}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskPriority')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskCreatedDate')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Created Date:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskCreatedDate}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskCreatedDate')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskCompletedDate')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Completed Date:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskCompletedDate}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskCompletedDate')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskCompletionDate')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Completion Date:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskCompletionDate}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskCompletionDate')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskStatus')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Status:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskStatus}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskStatus')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskCreatedBy')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Created By:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskCreatedBy}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskCreatedBy')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" th:class="${#fields.hasErrors('taskAssignedTo')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Assigned To:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{taskAssignedTo}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('taskAssignedTo')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group" th:class="${#fields.hasErrors('completed')} ? 'form-group has-error' : 'form-group'">
+                <label class="col-sm-2 control-label">Completed:</label>
+                <div class="col-sm-10">
+                    <input type="text" cols="40" rows="5" class="form-control" th:field="*{completed}" th:errorclass="has-error"/>
+
+                    <span class="help-block">
+                       <ul>
+                           <li th:each="err : ${#fields.errors('completed')}" th:text="${err}" />
+                       </ul>
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,15 +1,9 @@
-package com.Taskr.Taskrapi.model;
+package com.Taskr.Taskrapi.commands;
 
 import java.util.Date;
-import org.bson.types.ObjectId;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document
-public class Task {
-
-    @Id
-    private ObjectId taskId;
+public class TaskForm {
+    private String taskId;
     private String taskName;
     private String taskDescription;
     private String taskNotes;
@@ -22,16 +16,11 @@ public class Task {
     private int taskAssignedTo;
     private boolean completed;
 
-
-    public Task() {
-        //Default empty constructor
-    }
-
-    public ObjectId getTaskId() {
+    public String getTaskId() {
         return taskId;
     }
 
-    public void setTaskId(ObjectId taskId) {
+    public void setTaskId(String taskId) {
         this.taskId = taskId;
     }
 
@@ -123,3 +112,4 @@ public class Task {
         this.completed = completed;
     }
 }
+
