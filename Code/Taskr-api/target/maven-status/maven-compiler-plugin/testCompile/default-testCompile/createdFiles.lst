@@ -1,0 +1,5 @@
+com/Taskr/Taskrapi/SmokeTest.class
+com/Taskr/Taskrapi/controllers/TaskControllerTest.class
+com/Taskr/Taskrapi/HttpRequestTest.class
+com/Taskr/Taskrapi/controllers/UserControllerTest.class
+com/Taskr/Taskrapi/TaskrApiApplicationTests.class

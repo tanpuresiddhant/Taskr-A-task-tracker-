@@ -1,0 +1,17 @@
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/controllers/TaskController.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/controllers/UserController.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/model/Task.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/converters/TaskToTaskForm.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/TaskrApiApplication.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/converters/TaskFormToTask.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/services/TaskServiceImpl.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/repositories/UserRepository.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/services/UserService.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/repositories/TaskRepository.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/services/TaskService.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/commands/UserForm.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/converters/UserFormToUser.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/converters/UserToUserForm.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/services/UserServiceImpl.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/commands/TaskForm.java
+/mnt/c/Users/tanpu/Desktop/Taskr - A Task Tracker Application/Code/Taskr-api/src/main/java/com/Taskr/Taskrapi/model/User.java

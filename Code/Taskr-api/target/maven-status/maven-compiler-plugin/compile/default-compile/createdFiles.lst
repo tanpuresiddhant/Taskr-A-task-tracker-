@@ -1,0 +1,17 @@
+com/Taskr/Taskrapi/commands/UserForm.class
+com/Taskr/Taskrapi/converters/UserFormToUser.class
+com/Taskr/Taskrapi/controllers/TaskController.class
+com/Taskr/Taskrapi/converters/TaskFormToTask.class
+com/Taskr/Taskrapi/services/TaskServiceImpl.class
+com/Taskr/Taskrapi/converters/UserToUserForm.class
+com/Taskr/Taskrapi/converters/TaskToTaskForm.class
+com/Taskr/Taskrapi/commands/TaskForm.class
+com/Taskr/Taskrapi/repositories/UserRepository.class
+com/Taskr/Taskrapi/TaskrApiApplication.class
+com/Taskr/Taskrapi/model/Task.class
+com/Taskr/Taskrapi/services/UserServiceImpl.class
+com/Taskr/Taskrapi/services/UserService.class
+com/Taskr/Taskrapi/model/User.class
+com/Taskr/Taskrapi/services/TaskService.class
+com/Taskr/Taskrapi/repositories/TaskRepository.class
+com/Taskr/Taskrapi/controllers/UserController.class
