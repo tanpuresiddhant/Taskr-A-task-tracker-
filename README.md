@@ -5,6 +5,14 @@ Taskr-A task tracker!
 2) Documentation - Contains the design document 
 3) Executable Jar - Contains project jar file 
 
+Technologies Used: -
+1) Spring boot framework - http://spring.io/
+2) Junit Test framework - https://spring.io/guides/gs/testing-web/
+3) Manual testing and development is done using Postman - https://www.getpostman.com/
+4) IntelliJ IDE - https://www.jetbrains.com/idea/
+5) Maven - https://maven.apache.org/
+6) Embedded MongoDB : https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-nosql.html
+
 FAQ-
 1) How to configure the project?
 - Install any IDE to import the project (example IntelliJ IDEA, Eclipse)
