@@ -2,21 +2,22 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <title>Tasks</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
+
+    <!-- Optional theme -->
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"/>
 
 
 </head>
@@ -78,21 +79,33 @@
         <div class="col-sm-3">
             <a href="/task/new" class="btn btn-outline-secondary" type="button">New Task</a>
         </div>
-        <div class="input-group mb-5">
-            <input type="text" class="form-control" id="inputSelect01" placeholder="First Name"
-                   aria-label="Recipient's username" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-                <button onclick="myFunction()" class="btn btn-outline-secondary" type="button">Button</button>
-            </div>
+    </div>
+    <!--<h1></h1>-->
+    <br/>
+    <!--<div class = "row">-->
+    <!--<div class="col-lg-6">-->
+        <!--<div class="input-group mb-3">-->
+            <!--<input type="text" class="form-control" id="inputSelect01" placeholder="Enter first name to all the task for particular user"-->
+                   <!--aria-label="First name" aria-describedby="basic-addon2">-->
+            <!--<div class="input-group-append">-->
+                <!--<button onclick="myFunction()" class="btn btn-outline-secondary" type="button">Button</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input type="text" class="form-control" id="inputSelect01" placeholder="Enter first name to all the task for particular user..">
+            <span class="input-group-btn">
+        <button onclick="myFunction()" class="btn btn-secondary" type="button">Go!</button>
+      </span>
         </div>
     </div>
-
 </div>
 
 <script>
     function myFunction(){
-    var inputValue = $('#inputSelect01').val();
-    window.location.href = "/task/show/name/"+inputValue;
+        var inputValue = $('#inputSelect01').val();
+        window.location.href = "/task/show/name/"+inputValue;
     }
 
 </script>
@@ -100,6 +113,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+
 
 </body>
 </html>
